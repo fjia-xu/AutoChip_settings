@@ -1,0 +1,14 @@
+{
+	"general": {
+        "prompt": "./example_A.sv",
+        "name": "binary_to_bcd_converter",
+        "testbench": "./example_A_tb.sv",
+		"model_family": "ChatGPT",
+		"model_id": "gpt-4o-mini",
+		"num_candidates": 5,
+		"iterations": 5,
+        "outdir": "outputs_example_A",
+        "log": "log.txt",
+		"ensemble": false
+    }
+}
