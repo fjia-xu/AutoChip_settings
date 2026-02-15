@@ -22,9 +22,9 @@
 // 3. Reset:
 //    - On `reset_n` (low), the system should reset to the initial state and output 0.
 //
-// 4. Implementation Hint:
-//    - Use `localparam` for state definitions (e.g., S0, S1, ...) to ensure compatibility.
-//    - Ensure all sensitivity lists are correct: `always @(posedge clk or negedge reset_n)`.
+// 4. Implementation Hint (Use this structure to ensure correctness):
+//    - Use `localparam` for state definitions (S0=0, S1=1, ...).
+//    - Use a standard two-process FSM (next state logic + state register).
 //
 // Please provide the complete module code.
 
