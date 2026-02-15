@@ -1,0 +1,14 @@
+{
+    "general": {
+        "prompt": "./example_B.sv",
+        "name": "top_module",
+        "testbench": "./example_B_tb.sv",
+        "model_family": "ChatGPT",
+        "model_id": "gpt-4o-mini",
+        "num_candidates": 5,
+        "iterations": 5,
+        "outdir": "outputs_example_B",
+        "log": "log.txt",
+        "ensemble": false
+    }
+}
