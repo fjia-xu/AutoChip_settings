@@ -1,11 +1,12 @@
 // I am trying to create a Verilog model top_module for a binary to binary-coded-decimal converter.
-// The module declaration must look exactly like this:
+//
+// Please strictly follow this module definition:
 // module top_module (
 //     input [4:0] binary_input,
 //     output [7:0] bcd_output
 // );
 //
-//	- Implementation Requirements (Double Dabble Algorithm):
+// Implementation Requirements (Double Dabble Algorithm):
 //  1. Use a **13-bit temporary register** (`reg [12:0] temp`).
 //  2. **Initialization:**
 //     - Initialize the top 8 bits (Tens and Ones) to 0.
@@ -18,10 +19,11 @@
 //     - **Step B (Shift):**
 //       - Shift the entire `temp` register left by 1 (`temp = temp << 1;`).
 //  4. **Output:**
-//     - Assign `bcd_output` to the top 8 bits of the register (`temp[12:5]`).
-// Please write the complete Verilog code adhering strictly to these bit ranges.
+//     - Assign `bcd_output` to the top 8 bits of `temp` (`temp[12:5]`).
+//
+// Please provide the complete module code.
 
-module top_module(
-    input [4:0] binary_input,   // 5-bit binary input
-    output reg [7:0] bcd_output  // 8-bit BCD output (4-bit for Tens, 4-bit for Ones)
+module top_module (
+	input [4:0] binary_input,
+	output [7:0] bcd_output
 );
